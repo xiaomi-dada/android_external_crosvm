@@ -22,7 +22,10 @@ rust_library {
         "libserde",
         "libserde_json",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
 
 rust_binary {
@@ -41,5 +44,8 @@ rust_binary {
         "libserde",
         "libserde_json",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }

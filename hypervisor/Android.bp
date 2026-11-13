@@ -509,7 +509,10 @@ rust_library {
         "libvm_memory",
     ],
     proc_macros: ["libenumn"],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
     arch: {
         arm64: {
             rustlibs: ["libaarch64_sys_reg"],

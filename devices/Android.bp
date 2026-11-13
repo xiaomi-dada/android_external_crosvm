@@ -338,7 +338,10 @@ rust_library {
         "libenumn",
         "libremain",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
     use_expansive_default_srcs: false,
     arch: {
         arm64: {

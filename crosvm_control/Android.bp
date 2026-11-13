@@ -38,7 +38,10 @@ rust_ffi_shared {
     // doesn't actually exist.
     //
     // static_libs: ["libcrosvm_control_test"],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
 
 rust_ffi_static {
@@ -67,6 +70,9 @@ rust_ffi_static {
     // doesn't actually exist.
     //
     // static_libs: ["libcrosvm_control_test"],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
     visibility: ["//packages/modules/Virtualization/android/virtmgr"],
 }

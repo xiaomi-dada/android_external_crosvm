@@ -30,7 +30,10 @@ rust_library {
         "libprotobuf",
         "libregistered_events_proto",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
 
 rust_protobuf {
@@ -40,6 +43,7 @@ rust_protobuf {
     source_stem: "cdisk_spec",
     host_supported: true,
     apex_available: [
+        "//apex_available:platform",
         "com.android.virt",
     ],
 }
@@ -51,6 +55,7 @@ rust_protobuf {
     source_stem: "registered_events",
     host_supported: true,
     apex_available: [
+        "//apex_available:platform",
         "com.android.virt",
     ],
 }

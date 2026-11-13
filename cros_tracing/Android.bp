@@ -28,5 +28,8 @@ rust_library {
         "libcros_tracing_types",
         "libsync_rust",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }

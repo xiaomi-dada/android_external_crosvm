@@ -45,5 +45,8 @@ rust_library {
         "libserde",
         "libthiserror",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }

@@ -38,5 +38,8 @@ rust_library {
         },
     },
     proc_macros: ["libasync_trait"],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }

@@ -65,7 +65,10 @@ rust_library {
             ],
         },
     },
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
 
 cc_library_static {
@@ -98,6 +101,7 @@ cc_library_static {
         },
     },
     apex_available: [
+        "//apex_available:platform",
         "com.android.virt",
     ],
 }

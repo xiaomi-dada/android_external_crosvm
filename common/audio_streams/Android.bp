@@ -55,5 +55,8 @@ rust_library {
         "libasync_trait",
         "libremain",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }

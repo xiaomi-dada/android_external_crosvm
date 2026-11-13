@@ -120,7 +120,10 @@ rust_binary {
         "libenumn",
         "libremain",
     ],
-    apex_available: ["com.android.virt"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
     visibility: ["//visibility:public"],
     arch: {
         x86_64: {
