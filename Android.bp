@@ -320,6 +320,12 @@ rust_defaults {
             enabled: false,
         },
     },
-    defaults_visibility: ["//external/crosvm:__subpackages__"],
-    visibility: ["//external/crosvm:__subpackages__"],
+    defaults_visibility: [
+        "//external/crosvm:__subpackages__",
+        "//vendor:__subpackages__",
+    ],
+    visibility: [
+        "//external/crosvm:__subpackages__",
+        "//vendor:__subpackages__",
+    ],
 }
